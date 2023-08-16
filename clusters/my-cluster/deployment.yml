@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: sample-app
-          image: public.ecr.aws/z5v5w0f3/hello-app:latest # {"$imagepolicy": "flux-system:demo-flux"}
+          image: public.ecr.aws/z5v5w0f3/hello-app:latest # {"$imagepolicy": "flux-system:hello-flux"}
           ports:
             - containerPort: 80
 ---
