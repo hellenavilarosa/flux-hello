@@ -18,7 +18,7 @@ spec:
   interval: 1m0s
   sourceRef:
     kind: GitRepository
-    name: hello-flux
+    name: flux-hello
   update:
     path: ./clusters/my-cluster
     strategy: Setters
