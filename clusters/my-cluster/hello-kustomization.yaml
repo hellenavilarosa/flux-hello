@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./kustomize
+  path: ./clusters/my-cluster
   prune: true
   retryInterval: 1m0s
   sourceRef:
