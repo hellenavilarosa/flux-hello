@@ -2,10 +2,10 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
   name: flux-hello
-  namespace: flux-system
+  namespace: default
 spec:
   interval: 1m0s
-  path: "./clusters/my-cluster/flux-system"
+  path: ./clusters/my-cluster/flux-system
   prune: true
   retryInterval: 1m0s
   sourceRef:
