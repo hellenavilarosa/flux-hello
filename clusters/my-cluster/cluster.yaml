@@ -1,0 +1,21 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: aws-workshop-cluster
+  region: us-west-1
+nodeGroups:
+  - name: aws-workshop-ng
+    instanceType: m5.large
+    desiredCapacity: 3
+gitops:
+  flux:
+    gitProvider: "github"
+    flags:
+      owner: "hellenavilarosa"
+      repository: "flux-hello"
+      private: "false"
+      personal: "true"
+      branch: "main"
+      namespace: "flux-system"
+      path: "clusters/my-cluster"
+      read-write-key: "true"
